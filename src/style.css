@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    background-color: #0B2434;
+    padding-top: 5vh; /* Decides how much space to put between the top of the screen and main. Super useful styling -- vh is view height, a unit of measurement useful for consistency across devices */
+}
+
+
+main {
+    padding:10px;
+    margin:auto;
+    width: 50%;
+    background-color: #F5F5F5;
+    height: 450px;
+    max-width: 800px;
+    min-width: 400px;  /* this is a really good fix for the problem i was having for rendering on mobile devices. */
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dieContainer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 30px
+}
+
+.dieBox{
+    height:50px;
+    width:50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    color: white;
+}
+
+.rollButton{
+    font-size: 15px;
+    cursor:pointer;
+    height:50px;
+    width:100px;
+    background: #5035FF;
+    border-radius: 4px;
+    color:white;
+    font-family:'Karla', sans-serif;
+}
+
+.rollButton:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+.scores {
+    min-width: 400px;
+    padding:10px;
+    margin:auto;
+    width: 50%;
+    background-color: #F5F5F5;
+    height: 200px;
+    max-width: 800px;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
