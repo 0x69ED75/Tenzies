@@ -46,7 +46,7 @@ export default function App() {
 
 // handles the rolling of any die which is not being held.
     function handleRoll(){
-        setCount(oldCount => oldCount + 1);
+        setCount(oldCount => oldCount + 1); // increasing the number of times the die has been rolled.
 
         setDice(oldDice => oldDice.map(die=>{
             return die.isHeld
@@ -55,7 +55,7 @@ export default function App() {
         }))
     }
 
-    //setting dice state by looking through the old dice, mapping each value to a new array, if we find the dice with the id passed as param, we change isHeld to the opposite value.
+    //setting dice held state by looking through the old dice, mapping each value to a new array, if we find the dice with the id passed as param, we change isHeld to the opposite value.
     function holdDice(id){
         setDice(oldDice => oldDice.map(die =>{
             return die.id === id
@@ -70,6 +70,7 @@ export default function App() {
         setTenzies(prevTenzies => !prevTenzies)
         setCount(0)
     }
+
     // Handles all events that occur when a user wins: updating localstorage, updating states.
     function handleWin(){
 
