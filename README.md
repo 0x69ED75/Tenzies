@@ -6,7 +6,7 @@ Tenzies is a game where you roll 10 dice, with the aim to have all dice have the
 
 Furthermore, this app will track your best scores and your average score.
 
-The game is playable at this URL: https://0x69ed75.github.io/Tenzies/
+The game is playable at this URL: https://0x978.github.io/Tenzies/
 
 ## Rules
 The rules of Tenzies are simple:
